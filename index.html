@@ -136,13 +136,16 @@ body {
   border-radius: 12px;
   overflow: hidden;
 }
-.pricing-table thead {
+.pricing-table thead tr {
   background: linear-gradient(135deg, rgba(107,211,255,.9), rgba(138,125,255,.9));
 }
 .pricing-table th {
   color: #0b1020;
   padding: 12px;
   text-align: left;
+}
+.pricing-table th:nth-child(even) {
+  text-align: right;
 }
 .pricing-table td {
   padding: 10px;
@@ -170,7 +173,7 @@ body {
 <header class="branding-group">
   <h1 class="brand">
     NordPaper
-    <span class="tag">Twój polsko-norweski przewodnik języku, biznesu i administracji</span>
+    <span class="tag">Twój polsko-norweski przewodnik po języku, biznesie i administracji</span>
   </h1>
 </header>
 
@@ -187,7 +190,7 @@ body {
 
 <section class="contact-section">
   <div class="contact-info">
-    <span>contact@nordpaper.pl</span>
+    <span>kontakt@nordpaper.pl</span>
     <span>+48 732 567 007</span>
   </div>
 </section>
@@ -199,7 +202,7 @@ body {
 <section id="cennik-container">
   <table class="pricing-table">
     <thead>
-      <tr><th>Usługa</th><th style="text-align: right;">Cena</th></tr>
+      <tr><th>Usługa</th><th>Cena</th></tr>
     </thead>
     <tbody>
       <tr><td>Wykonanie telefonu do Urzędu</td><td>150 zł</td></tr>
